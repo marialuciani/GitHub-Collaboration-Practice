@@ -1,0 +1,48 @@
+(CSS) makskwapinski@Makss-MacBook-Pro Project-1 % git clone https://github.com/marialuciani/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 1), reused 7 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (15/15), 5.41 KiB | 5.41 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+(CSS) makskwapinski@Makss-MacBook-Pro Project-1 % git pull
+fatal: not a git repository (or any of the parent directories): .git
+(CSS) makskwapinski@Makss-MacBook-Pro Project-1 % git GitHub-Collaboration-Practice
+git: 'GitHub-Collaboration-Practice' is not a git command. See 'git --help'.
+(CSS) makskwapinski@Makss-MacBook-Pro Project-1 % cd GitHub-Collaboration-Practice
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git pull
+Already up to date.
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git checkout -b makskwap
+Switched to a new branch 'makskwap'
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % vim Group_Project.md
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % touch makskwapscript.txt
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git add makskwapscript.txt
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git add Group_Project.md
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git commit -m "Changing Group_Project and adding Script"
+[makskwap 6fb8d0e] Changing Group_Project and adding Script
+ 2 files changed, 4 insertions(+)
+ create mode 100644 makskwapscript.txt
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git push
+fatal: The current branch makskwap has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin makskwap
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+(CSS) makskwapinski@Makss-MacBook-Pro GitHub-Collaboration-Practice % git push --set-upstream origin makskwap
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 515 bytes | 515.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'makskwap' on GitHub by visiting:
+remote:      https://github.com/marialuciani/GitHub-Collaboration-Practice/pull/new/makskwap
+remote: 
+To https://github.com/marialuciani/GitHub-Collaboration-Practice.git
+ * [new branch]      makskwap -> makskwap
+branch 'makskwap' set up to track 'origin/makskwap'.
