@@ -1,0 +1,70 @@
+
+lande@DESKTOP-7TI6MML MINGW64 ~
+$ git clone https://github.com/marialuciani/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 27 (delta 5), reused 12 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (27/27), 9.62 KiB | 1.92 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+lande@DESKTOP-7TI6MML MINGW64 ~
+$ cd
+
+lande@DESKTOP-7TI6MML MINGW64 ~
+$ cd GitHub-Collaboration-Practice
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (main)
+$ git checkout -b <lcjoni>
+bash: syntax error near unexpected token `newline'
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (main)
+$ git checkout -b lcjoni
+Switched to a new branch 'lcjoni'
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ git checkout lcjoni
+Already on 'lcjoni'
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ git pull origin main
+From https://github.com/marialuciani/GitHub-Collaboration-Practice
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ nano Group_Project.md
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ nano nano Group_Project.md
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ touch commands.txt
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ git add .
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ git commit -m "Added degree program and research interests"
+[lcjoni ade99b2] Added degree program and research interests
+ 2 files changed, 6 insertions(+)
+ create mode 100644 commands.txt
+
+lande@DESKTOP-7TI6MML MINGW64 ~/GitHub-Collaboration-Practice (lcjoni)
+$ git push origin lcjoni
+fatal: unable to connect to cache daemon: Unknown error
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 473 bytes | 473.00 KiB/s, done.
+Total 4 (delta 2), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'lcjoni' on GitHub by visiting:
+remote:      https://github.com/marialuciani/GitHub-Collaboration-Practice/pull/new/lcjoni
+remote:
+To https://github.com/marialuciani/GitHub-Collaboration-Practice.git
+ * [new branch]      lcjoni -> lcjoni
+
