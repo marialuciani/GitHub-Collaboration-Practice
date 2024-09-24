@@ -1,0 +1,59 @@
+## Make new branch
+
+git checkout -b maria
+
+## Add text in step 4(c) to Group_Project.md
+
+nano Group_Project.md
+cat Group_Project.md
+
+## Push changes to "maria" branch
+
+git add .
+git commit -m  "added text to Group_Project.md as specified in step 4(c) of Project 1"
+git push --set-upstream origin maria
+
+## merged "maria" changes to "main" on GitHub, and then merged "main" back to "maria" to follow project steps even though they're exactly the same. Wasn't sure if intended to make sure everyone got to merge?
+
+## Add degree program, make new commands file (steps 4c and 4d)
+
+Last login: Mon Sep 23 13:22:01 on ttys000
+(base) marialuciani@Marias-MacBook-Air ~ % cd git/GitHub-Collaboration-Practice
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % git switch maria
+Branch 'maria' set up to track remote branch 'maria' from 'origin'.
+Switched to a new branch 'maria'
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % git status
+On branch maria
+Your branch is up to date with 'origin/maria'.
+
+nothing to commit, working tree clean
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % git pull
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+Already up to date.
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % nano Group_Project.md
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % cat Group_Project.md
+# Group Project
+
+## Degree Programs & Research Interests of Members
+
+Maria Luciani is a Social & Personality Psychology PhD student in the Psychology department. She is interested in close relationships and factors that influence interpersonal processes such as intellectual humility, authenticity, and couples' political differences.
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % touch ml_edits.txt
+(base) marialuciani@Marias-MacBook-Air GitHub-Collaboration-Practice % nano ml_edits.txt
+
+## Future commands to add everything back to my branch "maria":
+
+git add .
+git commit -m "added degree info, commands record per steps 4(d-e)"
+git push -u origin maria
